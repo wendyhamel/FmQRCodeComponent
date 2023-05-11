@@ -5,24 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind play cdn and local tailwind config file -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="src/tailwind.config.js"></script>
+
+  <!-- Alpine.js  -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
+<main class="antialiased bg-light-gray min-h-screen px-4 py-8 grid place-items-center">
+  <section class="bg-white text-neutral-gray-blue rounded-3xl px-4 pt-4 pb-8 max-w-xs space-y-6">
+    <div class="rounded-xl overflow-hidden">
+      <img src="images/image-qr-code.png" alt="QR code" class="object-cover w-full h-full">
+    </div>
+    <div>
+      <h1 class="text-large font-bold text-dark-blue leading-tight text-center">Improve your front-end skills by building projects</h1>
+      <p class="text-small leading-tight tracking-wide text-gray-blue text-center pt-4 px-1">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </section>
 
-  Improve your front-end skills by building projects
+</main>
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<footer class="fixed bottom-0 inset-x-0 text-center text-xs text-dark-blue bg-white/80 py-1 opacity-0 translate-y-2 hover:opacity-100 hover:translate-y-0 transform transition ease-in-out duration-150">
+  Challenge by <a class="hover:underline" href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H" target="_blank">Frontend Mentor</a>.
+  Coded by <a class="hover:underline" href="https://www.frontendmentor.io/profile/wendyhamel" target="_blank">Wendy Hamel</a>.
+</footer>
 </body>
 </html>
